@@ -11,10 +11,10 @@ contract Staking is Ownable {
     IERC20 public rewardsToken;
     IERC20 public stakingToken;
 
-    uint private rewardRate = 100;
+    uint private rewardRate = 100; // reward rates
 
-    uint private withdrawFee = 10;
-    bool private withdrawFeeStatus = true;
+    uint private withdrawFee = 10; // withdraw fees
+    bool private withdrawFeeStatus = true; // enable/disable withdraw fees
 
     uint public lastUpdateTime;
     uint public rewardPerTokenStored;
